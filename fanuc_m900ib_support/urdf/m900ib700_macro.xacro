@@ -277,7 +277,7 @@
       <parent link="${prefix}link_2"/>
       <child link="${prefix}balancer_left"/>
       <axis xyz="0 1 0"/>
-      <mimic joint="${prefix}joint_2" multiplier="0.18" offset="0" />
+      <mimic joint="${prefix}joint_2" multiplier="0.18" offset="0" expr="sin(${prefix}joint_1_q) + ${prefix}joint_3_q" />
     </joint>
     <joint name="${prefix}piston_left_joint" type="continuous">
       <origin xyz="0.410 0 0.235" rpy="0 0 0"/>
